@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <!-- Bootstrap CSS -->
+          <link
+               href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+               rel="stylesheet"
+               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+               crossorigin="anonymous"
+          />
+          <!-- adding external css file  -->
+          <link rel="stylesheet" href="style.css" />
+
+          <title>slider</title>
+     </head>
+     <body>
+          <div class="container-fluid" id="container">
+               <h1>Customer Review</h1>
+               <div class="review-box">
+                    <div id="slide">
+                         <div id="card">
+                              <div class="profile">
+                                   <img src="images/pic1.jpg" alt="" />
+                                   <div>
+                                        <h4>Rille Oille</h4>
+                                        <p>Software Developer</p>
+                                   </div>
+                              </div>
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur
+                                   adipisicing elit. Praesentium delectus
+                                   laudantium, in officia dolor iste hic sit
+                                   culpa quaerat reiciendis ullam maiores vitae
+                                   quam maxime, eveniet facilis corrupti enim
+                                   consequuntur?
+                              </p>
+                         </div>
+                         <div id="card">
+                              <div class="profile">
+                                   <img src="images/pic2.jpg" alt="" />
+                                   <div>
+                                        <h4>Merile Nguyen</h4>
+                                        <p>Sr. Software Developer</p>
+                                   </div>
+                              </div>
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur
+                                   adipisicing elit. Praesentium delectus
+                                   laudantium, in officia dolor iste hic sit
+                                   culpa quaerat reiciendis ullam maiores vitae
+                                   quam maxime, eveniet facilis corrupti enim
+                                   consequuntur?
+                              </p>
+                         </div>
+                         <div id="card">
+                              <div class="profile">
+                                   <img src="images/pic3.jpg" alt="" />
+                                   <div>
+                                        <h4>Stive Oille</h4>
+                                        <p>Software Developer</p>
+                                   </div>
+                              </div>
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur
+                                   adipisicing elit. Praesentium delectus
+                                   laudantium, in officia dolor iste hic sit
+                                   culpa quaerat reiciendis ullam maiores vitae
+                                   quam maxime, eveniet facilis corrupti enim
+                                   consequuntur?
+                              </p>
+                         </div>
+                         <div id="card">
+                              <div class="profile">
+                                   <img src="images/pic4.jpg" alt="" />
+                                   <div>
+                                        <h4>John willams</h4>
+                                        <p>Software Developer</p>
+                                   </div>
+                              </div>
+                              <p>
+                                   Lorem ipsum dolor, sit amet consectetur
+                                   adipisicing elit. Praesentium delectus
+                                   laudantium, in officia dolor iste hic sit
+                                   culpa quaerat reiciendis ullam maiores vitae
+                                   quam maxime, eveniet facilis corrupti enim
+                                   consequuntur?
+                              </p>
+                         </div>
+                    </div>
+                    <div class="sidebar">
+                         <img src="images/up-arrow.png" id="upArrow" />
+                         <img src="images/down-arrow.png" id="downArrow" />
+                    </div>
+               </div>
+          </div>
+
+          <script>
+               const slide = document.getElementById("slide");
+               const upArrow = document.getElementById("upArrow");
+               const downArrow = document.getElementById("downArrow");
+
+                let x= 0;
+
+                upArrow.onclick = function(){
+                      if ( x > "-900") {
+                         x = x-300;
+                    slide.style.top = x + "px"; 
+                      }
+                   
+                }
+                downArrow.onclick = function(){
+                      if ( x < 0) {
+                         x = x + 300;
+                    slide.style.top = x + "px"; 
+                      }
+                   
+                }
+
+               
+          </script>
+     </body>
+</html>
